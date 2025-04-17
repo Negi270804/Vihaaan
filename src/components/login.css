@@ -1,0 +1,139 @@
+/* Container and grid setup */
+.login-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(to right, #93c5fd, #60a5fa, #3b82f6);
+}
+
+.login-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 3rem;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 900;
+}
+
+.logo-slogan {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Form Section */
+.login-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-title {
+  position: absolute;
+  top: 20px;
+  font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.login-form-wrapper {
+  background: linear-gradient(to bottom right, #3a7bd5, #3a6073);
+  width: 80%;
+  max-width: 500px;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Inputs */
+.input-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.input-group label {
+  width: 100px;
+  color: white;
+  font-size: 16px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Buttons */
+.submit-btn,
+.switch-btn {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #64748b;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover,
+.switch-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Switch Info */
+.login-switch {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .login-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .login-left {
+    padding: 20px;
+  }
+
+  .logo-text {
+    font-size: 2.2rem;
+  }
+
+  .logo-slogan {
+    font-size: 1rem;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .input-group label {
+    font-size: 14px;
+    width: 90px;
+  }
+
+  .input-group input {
+    padding: 6px;
+  }
+}

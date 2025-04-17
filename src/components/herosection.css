@@ -1,0 +1,25 @@
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #7b8c8d;
+}
